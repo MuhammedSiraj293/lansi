@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
     slug: placementSlug,
     images: placementData.images || [],
     keywords: placementData.keywords || "nursing, healthcare, placement",
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/placements/${placementSlug}`,
+    canonical: `/placements/${placementSlug}`,
   });
 
   return seoData;
