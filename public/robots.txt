@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+# Host
+Host: https://www.lanstitut.com
+
+# Sitemaps
+Sitemap: https://www.lanstitut.com/sitemap.xml

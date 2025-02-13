@@ -1,0 +1,41 @@
+/* footer.module.css */
+.footerBackground {
+  background-color: #000000; /* Black background */
+  padding: 60px 30px;
+  margin-top: 100px;
+}
+
+.footerText {
+  color: #ffffff; /* White text color */
+  text-align: left !important;
+  line-height: 1.5;
+}
+
+.logoTitle {
+  font-size: 2rem; /* Logo text size */
+  margin-bottom: 0.5rem;
+}
+
+.linkList {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.linkItem a {
+  color: #ffffff; /* Ensuring links are white */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.linkItem a:hover {
+  color: #cccccc; /* Light grey on hover */
+}
+
+.socialIcons {
+  font-size: 1.5rem; /* Icon size */
+  margin-right: 10px; /* Space between icons */
+}
+
+.languageButton {
+  border-color: #ffffff; /* White border for the button */
+}

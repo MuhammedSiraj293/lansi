@@ -1,0 +1,16 @@
+.dice {
+  width: 100%; /* Adjust size as needed */
+  height: 220px; /* Adjust size as needed */
+  perspective: 1000px;
+  margin-top: 7px;
+}
+
+.dice img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  transition: transform 5s;
+  transform-style: preserve-3d;
+}
