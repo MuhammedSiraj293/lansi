@@ -17,7 +17,7 @@ export default async function PlacementsPage({ params }) {
   // Fetch data dynamically based on the placementSlug
   const placementData = await getPlacementData(placementSlug);  // Example fetch function
 
-  const categories = placementData.categories || [];
+  const categories = placementData.categories.name  || [];
   const benefitsList = placementData.benefitsList || [];
   const servicesList = placementData.servicesList || [];
 
