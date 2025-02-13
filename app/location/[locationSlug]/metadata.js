@@ -28,9 +28,9 @@ export async function generateMetadata({ params }) {
   return generateSEO({
     title: cityData.title,
     description: cityData.description,
-    slug: `courses/${locationSlug}/${cityLowerCase}`, 
+    slug: `location/${locationSlug}`, 
     keywords: cityData.keywords,
     images: cityData.images,
-    canonical: `https://www.lanstitut.com/courses/${locationSlug}/${cityLowerCase}`,
+    canonical: `https://www.lanstitut.com/location/${locationSlug}`,
   });
 }
