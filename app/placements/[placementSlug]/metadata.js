@@ -2,9 +2,11 @@ import { generateSEO } from "@/lib/seo";
 import { getPlacementData } from "@/lib/placement";
 
 export async function generateMetadata({ params }) {
-  const { placementSlug } = params;
 
-  const placementData = await getPlacementData(placementSlug);
+  const { placementSlug } = params; 
+  
+  
+  const placementData = getPlacementData(placementSlug);
 
   const seoData = generateSEO({
     title: placementData.title || "Default Title", 

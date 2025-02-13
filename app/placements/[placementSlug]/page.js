@@ -1,4 +1,3 @@
-import { generateSEO } from "@/lib/seo";
 import IconCombo from "@/components/Home/IconCombo";
 import Flairs from "@/components/Home/Flairs";
 import FAQs from "@/components/Home/FAQs";
@@ -17,7 +16,7 @@ export default async function PlacementsPage({ params }) {
   // Fetch data dynamically based on the placementSlug
   const placementData = await getPlacementData(placementSlug);  // Example fetch function
 
-  const categories = placementData.categories.name  || [];
+  const categories = placementData.categories.name || [];
   const benefitsList = placementData.benefitsList || [];
   const servicesList = placementData.servicesList || [];
 

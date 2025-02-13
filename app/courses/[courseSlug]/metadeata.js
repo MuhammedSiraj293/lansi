@@ -1,5 +1,4 @@
 import { generateSEO } from "@/lib/seo";
-import CourseSchema from "@/components/Schemas/courseSchema";
 export async function generateMetadata({ params }) {
   const { courseSlug } = params;
   const courseData = {
@@ -16,7 +15,7 @@ export async function generateMetadata({ params }) {
     slug: courseData.slug,
     keywords: courseData.keywords,
     images: courseData.images,
-    canonical: `https://www.lanstitut.com/blog/${params.slug}`,
+    canonical: `https://www.lanstitut.com/courses/${courseSlug}`,
     
   });
 }
