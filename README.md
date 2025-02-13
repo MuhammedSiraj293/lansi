@@ -39,21 +39,32 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 siraj 
 
-Features
-Dynamic Meta Tags & Open Graph Optimization
+## Features
+
+## Dynamic Meta Tags & Open Graph Optimization
+
 Created globally in (lib seo.js) for dynamically calling all pages 
+
 Change all data in metadata.js pages and it calls in page.js 
-Structured Data (JSON-LD)
+
+## Structured Data (JSON-LD)
+
 Course Schema (@type: Course) for upskilling programs.
+
 FAQ Schema (@type: FAQPage) for frequently asked questions.
+
 JobPosting Schema (@type: JobPosting) for nursing job listings.
+
 Breadcrumb Schema (@type: BreadcrumbList) for clear navigation.
+
 Created all json-ld in component > schemas file and call it needed place 
-Multi-Location SEO & hreflang Implementation
+
+## Multi-Location SEO & hreflang Implementation
 Local SEO metadata for city-specific pages (e.g., /locations/bangalore, /locations/kochi).
 hreflang tags implemented for future multilingual support.
 Created in languages herflang.js and called in layout js
-XML & HTML Sitemap Generation
+
+## XML & HTML Sitemap Generation
 Dynamic XML sitemap generation for key pages:
 Courses: /courses/german-b2, /courses/german-a2, etc.
 City-specific pages: /locations/bangalore, /locations/kochi, etc.
@@ -61,24 +72,35 @@ Blog articles & testimonials.
 For dynamic data from db or api (for now created a data in lib>placement.js called it has a sample)
 
 
-Robots.txt & Meta Robots Implementation
+## Robots.txt & Meta Robots Implementation
 Proper robots.txt configuration to block indexing of non-SEO-friendly pages like /admin /dashbord /api
+
 Allow indexing of essential pages like course pages, blog posts, and success stories.
- Lazy loading images (next/image)
+
+## Lazy loading images (next/image)
+
  <Image src="/path/to/image.jpg" alt="Optimized Image" width={500} height={500} loading="lazy" />
-Preloading critical resources (<link rel="preload">)
+
+## Preloading critical resources (<link rel="preload">)
 <link rel="preload" href="/path/to/important.js" as="script"> 
 <link rel="preload" href="/path/to/important.css" as="style">
  <link rel="preload" href="/path/to/font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-Minimizing CLS (Cumulative Layout Shift) by defining image sizes
+
+## Minimizing CLS (Cumulative Layout Shift) by defining image sizes
+
 <img src="/path/to/image.jpg" alt="description" width="500" height="300" />
+
 If we need to optimize better we can use image srcset
-Optimizing fonts & reducing unused CSS/JS
+
+## Optimizing fonts & reducing unused CSS/JS
 FAQ
 Q.How can I learn German for nursing? 
+
 We offer courses that will help you pass the German proficiency tests required for nursing jobs in Germany.
-New packages 
+
+## New packages 
 next-seo package for SEO optimizations
+
 next-sitemap for dynamic sitemap generation
 
 
